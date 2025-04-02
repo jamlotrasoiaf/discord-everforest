@@ -1,0 +1,513 @@
+/**
+ * @name Everforest Dark
+ * @description Everforest Dark for Discord (new UI update)
+ * @author shved., jamlotrasoiaf
+ * @version 0.0.1
+ * @authorId 833767278969225266
+ * @website https://github.com/jamlotrasoiaf/discord-everforest
+*/
+
+* {
+	--ever-dark-bg-hard: 30, 35, 38;
+	--ever-dark-bg: 39, 46, 51;
+	--ever-dark-bg-alt: 35, 42, 46;
+	--ever-dark-bg-soft: 41, 49, 54;
+	--ever-dark-bg1: 46, 56, 60;
+	--ever-dark-bg2: 55, 65, 69;
+	--ever-dark-bg3: 65, 75, 80;
+	--ever-dark-bg4: 73, 81, 86;
+
+	--ever-dark-fg-hard: 211, 198, 170;
+	--ever-dark-fg: 157, 169, 160;
+	--ever-dark-fg1: 133, 146, 137;
+	--ever-dark-fg2: 122, 132, 120;
+	--ever-dark-fg3: 93, 107, 102;
+
+	--ever-dark-purple-dark: 119, 64, 90;
+	--ever-dark-purple-light: 214, 153, 182;
+
+	--ever-dark-yellow-dark: 69, 68, 60;
+	--ever-dark-yellow-light: 219, 188, 127;
+	
+	--ever-dark-red-dark: 76, 55, 67;
+	--ever-dark-red-light: 230, 126, 128;
+
+	--ever-dark-orange-dark: 73, 59, 64;
+	--ever-dark-orange-light: 230, 153, 117;
+
+	--ever-dark-blue-dark: 56, 75, 85;
+	--ever-dark-blue-light: 127, 187, 179;
+
+	--ever-dark-green-dark: 60, 72, 65;
+	--ever-dark-green-light: 167, 192, 128;
+
+	--ever-dark-aqua-dark: 62, 99, 71;
+	--ever-dark-aqua-light: 131, 192, 146;
+
+	--ever-dark-gray-dark: 79, 91, 88;
+	--ever-dark-gray-light: 157, 169, 160;
+
+	/* ============================================================== */
+
+	--ever-dark-text-hard:           var(--ever-dark-fg-hard);
+	--ever-dark-text-primary:        var(--ever-dark-fg);
+	--ever-dark-text-secondary:      var(--ever-dark-fg1);
+	--ever-dark-text-tertiary:       var(--ever-dark-fg2);
+	--ever-dark-text-muted:          var(--ever-dark-fg3);
+	--ever-dark-text-danger:         var(--ever-dark-red-light);
+	--ever-dark-text-inverted-hard:  var(--ever-dark-text-hard);
+	--ever-dark-text-inverted:       var(--ever-dark-bg);
+
+	--ever-dark-background-positive: var(--ever-dark-green-dark);
+
+	--ever-dark-accent: var(--ever-dark-yellow-dark);
+	--ever-dark-accent-hover: var(--ever-dark-accent);
+
+	--ever-dark-icon-color: var(--ever-dark-fg2);
+	--ever-dark-icon-color-hover: var(--ever-dark-fg);
+	--ever-dark-icon-color-hover-harder: var(--ever-dark-fg-hard);
+	--ever-dark-icon-color-muted: var(--ever-dark-fg3);
+
+	--ever-dark-link-color: var(--ever-dark-blue-light);
+
+	--ever-dark-border-default: var(--ever-dark-bg2);
+	--ever-dark-border-hover: var(--ever-dark-bg3);
+
+	--ever-dark-button-color-default: var(--ever-dark-accent);
+	--ever-dark-button-color-hover:   rgba(var(--ever-dark-button-color-default), 0.7);
+	--ever-dark-button-text-default: var(--ever-dark-bg);
+	--ever-dark-button-text-dark: var(--ever-dark-text-primary);
+	--ever-dark-button-text-dark-muted: var(--ever-dark-text-muted);
+
+	--ever-dark-button-alt-default: var(--ever-dark-bg-soft);
+	--ever-dark-button-alt-hover:   var(--ever-dark-bg);
+
+	--ever-dark-button-positive-default: var(--ever-dark-green-dark);
+	--ever-dark-button-positive-hover:   rgba(var(--ever-dark-green-dark), 0.8);
+	
+	--ever-dark-input-box-background: var(--ever-dark-bg-soft);
+
+	--ever-dark-scrollbar-color: var(--ever-dark-bg3);
+	--ever-dark-scrollbar-background: transparent;
+
+	--ever-dark-selected-tab: var(--ever-dark-bg1);
+
+	--ever-dark-status-online: var(--ever-dark-green-dark);
+	--ever-dark-status-offline: var(--ever-dark-text-muted);
+	--ever-dark-status-idle: rgba(var(--ever-dark-accent), 0.8);
+	--ever-dark-status-dnd: var(--ever-dark-red-dark);
+}
+
+.visual-refresh.theme-dark,
+.visual-refresh .theme-dark,
+[class*=vc-membercount-total], /* vesktop plugin */
+.visual-refresh,
+.theme-dark {
+	--__header-bar-background: rgba(var(--ever-dark-bg-hard));
+	--autocomplete-bg: rgba(var(--ever-dark-bg));
+
+	--background-primary:  rgba(var(--ever-dark-bg));      /* #282828 */
+	--background-secondary: rgba(var(--ever-dark-bg-alt)) ; /* #212121 */
+	--background-secondary-alt: rgba(var(--ever-dark-bg-soft));
+	--background-tertiary: rgba(var(--ever-dark-bg-soft)); /* #32302f */
+
+	--background-base-lower: rgba(var(--ever-dark-bg));
+	--background-base-low: rgba(var(--ever-dark-bg));
+	--background-base-lowest: rgba(var(--ever-dark-bg-hard));
+	--background-floating: rgba(var(--ever-dark-bg-hard)); /* #1d2021 */
+
+	--background-surface-high: rgba(var(--ever-dark-bg-soft));
+	--background-surface-higher: rgba(var(--ever-dark-bg));
+	--background-surface-highest: rgba(var(--ever-dark-bg));
+
+	--background-feedback-critical: rgba(var(--ever-dark-red-dark), 0.08);
+	--background-feedback-positive: rgba(var(--ever-dark-green-dark), 0.08);
+
+	--background-modifier-accent: rgba(var(--ever-dark-border-default));
+	--background-modifier-selected: rgba(var(--ever-dark-selected-tab));
+
+	--background-mentioned: rgba(var(--ever-dark-accent), 0.1);
+	--background-mentioned-hover: rgba(var(--ever-dark-accent), 0.15);
+
+	--background-message-automod: rgba(var(--ever-dark-accent), 0.1);
+	--background-message-automod-hover: rgba(var(--ever-dark-accent), 0.15);
+
+	--background-accent: rgba(var(--ever-dark-bg1));
+
+	--bg-base-primary: rgba(var(--ever-dark-bg));
+	--bg-base-secondary: rgba(var(--ever-dark-bg)); 
+	--bg-base-tertiary: rgba(var(--ever-dark-bg-hard));
+	
+	--bg-surface-overlay: rgba(var(--ever-dark-bg));
+
+	--card-primary-bg:  rgba(var(--ever-dark-bg-hard));
+
+	--bg-brand: rgba(var(--ever-dark-accent), 0.8);
+
+	--bg-mod-faint: rgba(var(--ever-dark-bg-soft));
+	--bg-mod-strong: rgba(var(--ever-dark-bg2));
+	--bg-mod-subtle: rgba(var(--ever-dark-bg1));
+
+	--border-normal: rgba(var(--ever-dark-border-default));
+	--border-strong: rgba(var(--ever-dark-border-default));
+	--border-faint:  rgba(var(--ever-dark-border-default));
+	--border-subtle: rgba(var(--ever-dark-border-default));
+
+	--background-message-hover: rgba(var(--ever-dark-bg1));
+
+	--text-primary: rgba(var(--ever-dark-fg-hard)); /* #fbf1c7  */
+	--text-normal:  rgba(var(--ever-dark-fg));      /* #ebdbb2  */
+	--text-default: rgba(var(--ever-dark-fg));      /* #ebdbb2  */
+	--text-secondary: rgba(var(--ever-dark-fg1));   /* #d5c4a1 */
+	--text-tertiary: rgba(var(--ever-dark-fg2));    /* #bdae93 */
+	--text-positive: rgba(var(--ever-dark-green-dark));
+	--embed-title: rgba(var(--ever-dark-text-hard));
+
+	--text-link: rgba(var(--ever-dark-link-color));
+	--text-muted: rgba(var(--ever-dark-text-muted));
+	--text-brand: rgba(var(--ever-dark-accent));
+	--text-muted-on-default: rgba(var(--ever-dark-text-muted));
+
+	--text-feedback-positive: rgba(var(--ever-dark-green-dark));
+
+	--text-code-comment: rgba(var(--ever-dark-gray-light));
+	--text-code-default: rgba(var(--ever-dark-blue-light));
+	--text-code-keyword: rgba(var(--ever-dark-purple-light));
+	--text-code-variable: rgba(var(--ever-dark-blue-light));
+	--text-code-builtin: rgba(var(--ever-dark-purple-light));
+	--text-code-string: rgba(var(--ever-dark-aqua-light));
+
+	--header-primary: rgba(var(--ever-dark-text-primary));
+	--header-secondary: rgba(var(--ever-dark-text-tertiary));
+	--header-muted: rgba(var(--ever-dark-text-muted));
+
+	--checkbox-border-default: rgba(var(--ever-dark-border-default));
+	--checkbox-border-checked: rgba(var(--ever-dark-border-default));
+	--checkbox-background-default: rgba(var(--ever-dark-bg-soft));
+	--checkbox-background-checked: rgba(var(--ever-dark-background-positive));
+
+	--channel-icon: rgba(var(--ever-dark-icon-color));
+	--channels-default: rgba(var(--ever-dark-fg3));
+
+	--custom-notice-background: rgba(var(--ever-dark-green-dark));
+	--custom-notice-text: rgba(var(--ever-dark-text-hard));
+
+	--notice-background-positive: rgba(var(--ever-dark-green-dark));
+	--notice-background-warning: rgba(var(--ever-dark-yellow-dark), 0.8);
+	--notice-background-critical: rgba(var(--ever-dark-red-dark));
+
+	--notice-text-positive: rgba(var(--ever-dark-text-inverted-hard));
+
+	--link-color: rgba(var(--ever-dark-blue-dark));
+
+	--icon-primary:   rgba(var(--ever-dark-icon-color));
+	--icon-secondary: rgba(var(--ever-dark-icon-color));
+	--icon-tertiary:  rgba(var(--ever-dark-icon-color));
+	--icon-default:   rgba(var(--ever-dark-icon-color));
+	--icon-muted:     rgba(var(--ever-dark-icon-color-muted));
+
+	--input-background: rgba(var(--ever-dark-input-box-background));
+	--input-border: rgba(var(--ever-dark-border-default));
+	--input-placeholder-text: rgba(var(--ever-dark-text-tertiary));
+
+	--modal-background: rgba(var(--ever-dark-bg-hard));
+	--modal-footer-background: rgba(var(--ever-dark-bg));
+
+	--mention-foreground: rgba(var(--ever-dark-fg-hard));
+	--mention-background: rgba(var(--ever-dark-bg2));
+
+	--scrollbar-auto-thumb: rgba(var(--ever-dark-scrollbar-color));
+	--scrollbar-auto-track: rgba(var(--ever-dark-scrollbar-background));
+	--scrollbar-thin-thumb: rgba(var(--ever-dark-scrollbar-color));
+	--scrollbar-auto-scrollbar-color-thumb: rgba(var(--ever-dark-scrollbar-color));
+	--scrollbar-auto-scrollbar-color-track: rgba(var(--ever-dark-scrollbar-color));
+
+	--button-filled-brand-text: rgba(var(--ever-dark-button-text-default));
+	--button-filled-brand-border: rgba(var(--ever-dark-button-color-default));
+	--button-filled-brand-background: rgba(var(--ever-dark-button-color-default));
+	--button-filled-brand-background-active: rgba(var(--ever-dark-button-color-default));
+    --button-filled-brand-background-hover: var(--ever-dark-button-color-hover);
+
+	--button-danger-background:          rgba(var(--ever-dark-red-dark));
+	--button-danger-background-active:   rgba(var(--ever-dark-red-light));
+	--button-danger-background-disabled: rgba(var(--ever-dark-red-dark), 0.8);
+	--button-danger-background-hover:    rgba(var(--ever-dark-red-dark), 0.7);
+	--button-danger-border: rgba(var(--ever-dark-red-dark));
+
+	--button-outline-danger-background: rgba(var(--ever-dark-button-alt-default));
+	--button-outline-danger-background-hover: rgba(var(--ever-dark-button-alt-hover));
+	--button-outline-danger-border: rgba(var(--ever-dark-border-default));
+	--button-outline-danger-border-hover: rgba(var(--ever-dark-border-default));
+	--button-outline-danger-text: rgba(var(--ever-dark-button-text-dark-muted));
+	--button-outline-danger-text-hover: rgba(var(--ever-dark-text-danger));
+
+	--button-outline-positive-text: rgba(var(--ever-dark-text-primary));
+
+	--button-positive-background: rgba(var(--ever-dark-button-positive-default));
+	--button-positive-background-hover: var(--ever-dark-button-positive-hover);
+	--button-positive-border: rgba(var(--ever-dark-button-positive-default));
+
+	--button-secondary-background: rgba(var(--ever-dark-bg-soft));
+	--button-secondary-background-hover: rgba(var(--ever-dark-bg));
+	--button-secondary-text: rgba(var(--ever-dark-button-text-dark-muted));
+
+	--button-transparent-background: rgba(var(--ever-dark-button-alt-default));
+	--button-transparent-background-hover: rgba(var(--ever-dark-button-alt-hover));
+	--button-transparent-text: rgba(var(--ever-dark-button-text-dark));
+
+	--primary-630: rgba(var(--ever-dark-button-alt-default));
+	--primary-700: rgba(var(--ever-dark-button-alt-hover));
+
+	--background-code: rgba(var(--ever-dark-bg-hard));
+
+	--status-online: rgba(var(--ever-dark-status-online));
+	--status-offline: rgba(var(--ever-dark-status-offline));
+	--status-idle: var(--ever-dark-status-idle);
+	--status-dnd: rgba(var(--ever-dark-status-dnd));
+
+	--status-positive: rgba(var(--ever-dark-green-dark));
+	--status-positive-background: rgba(var(--ever-dark-green-dark));
+	--status-positive-text: rgba(var(--ever-dark-text-inverted-hard));
+
+	--status-danger: rgba(var(--ever-dark-red-dark));
+	--status-danger-background: rgba(var(--ever-dark-red-dark));
+	--status-danger-text: rgba(var(--ever-dark-text-primary));
+
+	--status-warning: rgba(var(--ever-dark-orange-dark));
+	--status-warning-background: rgba(var(--ever-dark-orange-dark));
+	--status-warning-text: rgba(var(--ever-dark-text-inverted-hard));
+
+	--status-speaking: rgba(var(--ever-dark-green-light));
+
+	--info-danger-background: rgba(var(--ever-dark-red-dark), 0.08);
+	--info-danger-text: rgba(rgba(ever-dark-red-light));
+
+	--info-help-foreground: rgba(var(--ever-dark-blue-light));
+	--info-help-background: rgba(var(--ever-dark-blue-dark), 0.1);
+
+	--info-positive-background: rgba(var(--ever-dark-green-dark), 0.08);
+	--info-positive-text: rgba(var(--ever-dark-green-light));
+
+	--info-warning-background: rgba(var(--ever-dark-orange-dark), 0.08);
+	--info-warning-text: rgba(var(--ever-dark-text-primary));
+
+	--background-mod-normal: rgba(var(--ever-dark-selected-tab));
+	--background-mod-strong: rgba(var(--ever-dark-bg2));
+	--background-mod-subtle: rgba(var(--ever-dark-bg-soft));
+
+
+	--interactive-normal: rgba(var(--ever-dark-icon-color));
+	--interactive-hover: rgba(var(--ever-dark-icon-color-hover-harder));
+	--interactive-active: rgba(var(--ever-dark-icon-color-hover-harder));
+	--interactive-muted: rgba(var(--ever-dark-bg3));
+
+	--message-reacted-text: rgba(var(--ever-dark-text-hard));
+	--message-reacted-background: rgba(var(--ever-dark-accent), 0.1);
+
+	--background-message-highlight: rgba(var(--ever-dark-accent), 0.1);
+	--background-message-highlight-hover: rgba(var(--ever-dark-accent), 0.15);
+
+	--spoiler-hidden-background: rgba(var(--ever-dark-bg2));
+	--spoiler-hidden-background-hover: rgba(var(--ever-dark-bg3));
+
+	--chat-background-default: rgba(var(--ever-dark-bg-soft));
+	--premium-nitro-pink-text: rgba(var(--ever-dark-purple-light));
+	--guild-boosting-pink: rgba(var(--ever-dark-purple-light));
+	--spine-default: rgba(var(--ever-dark-bg4));
+	--app-border-frame: rgba(var(--ever-dark-border-default));
+	--twitch: rgba(var(--ever-dark-purple-dark));
+	--opacity-blurple-12: rgba(var(--ever-dark-bg));
+
+	--brand-260: rgba(var(--ever-dark-accent-hover), 0.8);
+	--brand-360: rgba(var(--ever-dark-accent));
+	--brand-500: rgba(var(--ever-dark-accent-hover), 0.8);
+	--brand-05: rgba(var(--ever-dark-accent-hover), 0.2);
+	--white-500: rgba(var(--ever-dark-text-hard));
+	--blurple-50: rgba(var(--ever-dark-accent));
+	--green-300: rgba(var(--ever-dark-green-dark));
+	--green-360: rgba(var(--ever-dark-green-dark));
+	--color-total: rgba(var(--ever-dark-text-muted));
+	--primary-300: rgba(var(--ever-dark-text-hard));
+	--primary-500: rgba(var(--ever-dark-bg1));
+
+	--badge-brand-text: rgba(var(--ever-dark-text-inverted));
+	--badge-brand-bg: rgba(var(--ever-dark-accent-hover), 0.8);
+
+	--redesign-button-positive-background: rgba(var(--ever-dark-green-dark));
+	--redesign-button-positive-pressed-background: rgba(var(--ever-dark-green-dark), 0.8);
+	--redesign-button-positive-text: rgba(var(--ever-dark-text-hard));
+	--redesign-button-overlay-alpha-text: rgba(var(--ever-dark-text-hard));
+	--redesign-button-overlay-alpha-background: rgba(0, 0, 0, 0.3);
+}
+
+/* Invite button inside call box */
+.buttonColor__7b3e8 {
+	color: rgba(var(--ever-dark-text-primary))
+}
+
+/* Input / Output Volume slider (context menu) */
+:where(.visual-refresh) .mini_a562c8 .grabber_a562c8, :where(.visual-refresh) .slider_a562c8 .grabber_a562c8  {
+	background-color: rgba(var(--ever-dark-text-primary))
+}
+
+[class*=notches_] {
+	background-color: rgba(var(--ever-dark-bg3))
+}
+
+[class^=control_] [class*=checked_],
+#vc-spotify-player [class*=barFill_] {
+  background-color: rgba(var(--ever-dark-accent-hover), 0.8) !important;
+}
+
+.slider__87bf1 > rect {
+	fill: rgba(var(--ever-dark-text-hard));
+}
+.slider__87bf1 svg > path {
+	fill: rgba(var(--ever-dark-bg))
+}
+.container__87bf1 {
+	background-color: rgba(var(--ever-dark-bg2)) !important
+}
+
+/* "Share your screen" button */
+.theme-dark [class*="experimentButton_"][class*="buttonColor_"][class*="buttonActive_"] {
+	background-color: rgba(var(--ever-dark-green-dark), 0.2);
+	border: 1px solid rgba(var(--ever-dark-green-dark), 0.25);
+}
+.theme-dark [class*="experimentButton_"][class*="buttonColor_"][class*="buttonActive_"]:hover {
+	background-color: rgba(var(--ever-dark-green-dark), 0.4);
+	border: 1px solid rgba(var(--ever-dark-green-dark), 0.3);
+}
+
+/* call container bg */
+[class^=callContainer],
+[class^=callContainer] [class^=scroller_] {
+  background-color: rgba(var(--ever-dark-bg-hard));
+}
+/* Room preview animation */
+.gradientBackground__11664 {
+	background: rgba(var(--ever-dark-bg)) !important
+}
+.backgroundDark__11664 {
+	background: rgba(var(--ever-dark-bg)) !important
+}
+.foregroundRing__11664 {
+	background: rgba(var(--ever-dark-accent-hover), 0.3) !important
+}
+.foregroundBase__11664 {
+	background: rgba(var(--ever-dark-accent-hover), 1) !important
+}
+
+/* Online statuses */
+[mask^="url(#svg-mask-status-online"] {
+  fill: rgba(var(--ever-dark-status-online));
+}
+
+[mask^="url(#svg-mask-status-dnd"] {
+  fill: rgba(var(--ever-dark-status-dnd));
+}
+
+[mask^="url(#svg-mask-status-idle"] {
+  fill: var(--ever-dark-status-idle);
+}
+
+[mask^="url(#svg-mask-status-offline"] {
+  fill: rgba(var(--ever-dark-status-offline));
+}
+
+[class^=avatarWrapper_] {
+  [aria-label*=online i] svg > svg > rect {
+    fill: rgba(var(--ever-dark-green-dark)) !important;
+  }
+}
+[class^=avatarWrapper_] {
+  [aria-label*=idle i] svg > svg > rect {
+    fill: rgba(var(--ever-dark-orange-dark)) !important;
+  }
+}
+
+[class^=avatarWrapper_] {
+  [aria-label*=dnd i] svg > svg > rect {
+    fill: rgba(var(--ever-dark-red-dark)) !important;
+  }
+}
+
+[class^=avatarWrapper_] {
+  [aria-label*=invisible i] svg > svg > rect {
+    fill: rgba(var(--ever-dark-gray-light)) !important;
+  }
+}
+
+/* Screenshare icon */
+.icon_c9d15c > path {
+	fill: rgba(var(--ever-dark-accent))
+}
+
+[class^=callContainer] [class^=root] {
+  background-color: rgba(var(--ever-dark-bg-hard)) !important
+}
+
+.flex__7c0ba .lineClamp1__4bd52 {
+	color: rgba(var(--ever-dark-text-hard)) !important
+}
+
+/* Vesktop plugins / themes */
+.vc-addon-card {
+	border: 1px solid rgba(var(--ever-dark-border-default))
+}
+
+/* Use solid background for banners in the "Discover" category */
+.theme-dark .gradientOverlay_e9ef78,
+.theme-dark .bannerGradient__955a3 {
+	background-color: rgba(var(--ever-dark-bg));
+	border-bottom: 1px solid rgba(var(--ever-dark-border-hover))
+}
+
+/* Share your screen / Stop stream / change windows / ets bototm button inside call window */
+[class*="colorable_"][class*="greenGlow_"] {
+	background-color: rgba(var(--ever-dark-green-dark), 0.2);
+}
+[class*="colorable_"][class*="greenGlow_"]:hover,
+[class*="colorable_"][class*="greenGlow_"][class*="popoutOpen_"] {
+	background-color: rgba(var(--ever-dark-green-dark), 0.4);
+}
+
+/* Add right border for left section */
+.visual-refresh .sidebarList_c48ade {
+	border-right: 1px solid rgba(var(--ever-dark-border-default))
+}
+
+/* N new messages */
+.newMessagesBar__0f481 {
+	background-color: rgba(var(--ever-dark-bg-soft));
+	color: rgba(var(--ever-dark-text-primary))
+}
+.visual-refresh .barButtonAlt__0f481:hover {
+	background-color: transparent
+}
+
+/* Open voice button */
+/* .custom-profile-theme.theme-dark .themeColor_fb7f94.secondary_fb7f94 { */
+/* 	background-color: rgba(var(--ever-dark-button-alt-default)) */
+/* } */
+/* .custom-profile-theme.theme-dark .themeColor_fb7f94.secondary_fb7f94:hover { */
+/* 	background-color: rgba(var(--ever-dark-button-alt-hover)) */
+/* } */
+.custom-profile-theme.theme-dark [class*=themeColor i][class*=secondary i] {
+	background-color: rgba(var(--ever-dark-button-alt-default))
+}
+.custom-profile-theme.theme-dark [class*=themeColor i][class*=secondary i]:hover {
+	background-color: rgba(var(--ever-dark-button-alt-hover))
+}
+
+/* ==== Nuked elements ==== */
+
+/* Top to bottom */
+
+/* Quests banner */
+/* Help & Inbox */
+.wrapper__0d616,
+.trailing_c38106 {
+	display: none !important
+}
+
