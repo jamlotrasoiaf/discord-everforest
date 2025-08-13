@@ -1,43 +1,43 @@
 * {
-  /* Background shades (Blend of Everforest and custom scheme) */
-  --gruv-dark-bg-hard: 23, 28, 30;        /* #171c1e - Deep, dark base (blend) */
-  --gruv-dark-bg: 34, 40, 42;             /* #22282a - Rich dark green with blueish tint */
-  --gruv-dark-bg-alt: 41, 47, 50;         /* #292f32 - Slightly lighter, muted green */
-  --gruv-dark-bg-soft: 50, 56, 60;        /* #32383c - Soft dark tone with a hint of green */
-  --gruv-dark-bg1: 60, 66, 70;            /* #3c4246 - Dark teal */
-  --gruv-dark-bg2: 75, 82, 87;            /* #4b5257 - Muted greenish gray */
-  --gruv-dark-bg3: 90, 97, 104;           /* #5a6168 - Subtle earth tones */
-  --gruv-dark-bg4: 100, 108, 115;         /* #646c73 - Muted green/gray */
+  /* Background shades (Everforest Hard) */
+  --gruv-dark-bg-hard: 19, 24, 26;        /* #13181a - Very dark background base */
+  --gruv-dark-bg: 34, 40, 42;             /* #22282a - Dark greenish-gray background */
+  --gruv-dark-bg-alt: 47, 54, 56;         /* #2f3638 - Muted alternative background */
+  --gruv-dark-bg-soft: 58, 66, 69;        /* #3a4245 - Soft dark background */
+  --gruv-dark-bg1: 75, 83, 88;            /* #4b5358 - Deep, muted base */
+  --gruv-dark-bg2: 92, 101, 107;          /* #5c656b - Slightly lighter, dark gray */
+  --gruv-dark-bg3: 105, 115, 122;         /* #69737a - Muted dark teal */
+  --gruv-dark-bg4: 120, 130, 136;         /* #788286 - Subtle greenish blue */
 
-  /* Foreground / text shades (Blend of Everforest and custom scheme) */
-  --gruv-dark-fg-hard: 222, 227, 230;     /* #dee3e6 - Soft off-white */
-  --gruv-dark-fg: 204, 211, 218;          /* #ccd3da - Light, greenish gray */
-  --gruv-dark-fg1: 180, 188, 195;         /* #b4bcc3 - Muted off-white with green tones */
-  --gruv-dark-fg2: 160, 168, 175;         /* #a0a8af - Light grayish green */
-  --gruv-dark-fg3: 130, 138, 145;         /* #828a91 - Darker grayish-green */
+  /* Foreground / text shades (Everforest Hard) */
+  --gruv-dark-fg-hard: 211, 218, 218;     /* #d3dada - Light, off-white gray */
+  --gruv-dark-fg: 181, 192, 192;          /* #b5c0c0 - Soft muted gray */
+  --gruv-dark-fg1: 156, 170, 170;         /* #9caaaa - Neutral gray-green */
+  --gruv-dark-fg2: 134, 148, 148;         /* #869494 - Darker gray-green */
+  --gruv-dark-fg3: 111, 124, 124;         /* #6f7c7c - Darker muted green-gray */
 
-  /* Accent colors (Mix of Everforest and custom scheme) */
-  --gruv-dark-purple-dark: 146, 115, 140;  /* #92738c - Muted purple */
-  --gruv-dark-purple-light: 211, 134, 155; /* #d3869b - Light muted purple */
+  /* Accent colors (Everforest Hard) */
+  --gruv-dark-purple-dark: 125, 80, 117;  /* #7d5075 - Muted, dark purple */
+  --gruv-dark-purple-light: 171, 106, 145; /* #ab6a91 - Lighter, soft purple */
 
-  --gruv-dark-yellow-dark: 193, 196, 235; /* #c1c4eb - Soft yellow-green from Everforest */
-  --gruv-dark-yellow-light: 250, 189, 47;  /* #fdbb2d - Brighter yellow from custom scheme */
-  
-  --gruv-dark-red-dark: 204, 36, 29;       /* #cc241d - Soft red, muted */
-  --gruv-dark-red-light: 251, 73, 52;      /* #fb4934 - Brighter red accent */
+  --gruv-dark-yellow-dark: 192, 167, 53;   /* #c0a735 - Earthy yellow */
+  --gruv-dark-yellow-light: 232, 201, 72;  /* #e8c948 - Brighter yellow */
 
-  --gruv-dark-orange-dark: 214, 93, 14;    /* #d75f00 - Deep orange */
-  --gruv-dark-orange-light: 254, 128, 25;  /* #fe8021 - Bright orange */
+  --gruv-dark-red-dark: 176, 67, 45;       /* #b0432d - Muted red */
+  --gruv-dark-red-light: 229, 99, 51;      /* #e56633 - Brighter red accent */
 
-  --gruv-dark-blue-dark: 69, 133, 136;     /* #458584 - Soft teal-blue */
-  --gruv-dark-blue-light: 131, 165, 152;   /* #83a598 - Muted teal-green */
+  --gruv-dark-orange-dark: 181, 91, 24;    /* #b55b18 - Deep orange */
+  --gruv-dark-orange-light: 243, 132, 34;  /* #f38422 - Brighter orange accent */
 
-  --gruv-dark-green-dark: 130, 140, 70;    /* #8b8c46 - Earthy green */
-  --gruv-dark-green-light: 184, 187, 38;   /* #b8bb26 - Lighter green from Everforest */
+  --gruv-dark-blue-dark: 36, 92, 96;       /* #245c60 - Muted dark teal-blue */
+  --gruv-dark-blue-light: 89, 145, 150;    /* #599196 - Lighter teal-blue */
 
-  --gruv-dark-aqua-dark: 104, 157, 106;    /* #689d6a - Muted aqua */
-  --gruv-dark-aqua-light: 142, 192, 124;   /* #8ec07c - Light greenish aqua */
+  --gruv-dark-green-dark: 96, 97, 42;      /* #60612a - Muted green */
+  --gruv-dark-green-light: 146, 151, 73;   /* #929749 - Brighter green */
 
-  --gruv-dark-gray-dark: 146, 131, 116;    /* #928074 - Muted gray */
-  --gruv-dark-gray-light: 168, 153, 132;   /* #a89984 - Light gray */
+  --gruv-dark-aqua-dark: 72, 120, 72;      /* #487848 - Soft, earthy aqua */
+  --gruv-dark-aqua-light: 120, 163, 109;   /* #78a36d - Lighter greenish aqua */
+
+  --gruv-dark-gray-dark: 96, 102, 104;     /* #606668 - Muted gray */
+  --gruv-dark-gray-light: 130, 140, 144;   /* #828c90 - Lighter gray */
 }
