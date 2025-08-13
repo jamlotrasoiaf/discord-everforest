@@ -1,67 +1,43 @@
-@import url(https://iosevka-webfonts.github.io/iosevka/Iosevka.css);
-
-body {
-    --font: 'Iosevka Web';
-    font-weight: 400;
-    font-size: 13;
-    --code-font: 'Iosevka Web';
-}
-
-/* reduce context menu padding */
-.scroller_c1e9c4{
-    margin: -4px;
-    &::after,.separator_c1e9c4 {
-        margin: 1px 8px !important;
-    }
-    &::after,.wrapper_f563df {
-        padding: 2px !important;
-    }
-    &::after,.item_c1e9c4{
-        /* min-height is 32px as default, change value for desired look */
-        min-height: 32;
-        /* padding is 4px 8px as default, change value for desired look */
-        padding: 4px 8px;
-    }
-}
-
-/* override gruvbox with everforest */
 * {
-	--gruv-dark-bg-hard: 30, 35, 38;
-	--gruv-dark-bg: 39, 46, 51;
-	--gruv-dark-bg-alt: 35, 42, 46;
-	--gruv-dark-bg-soft: 41, 49, 54;
-	--gruv-dark-bg1: 46, 56, 60;
-	--gruv-dark-bg2: 55, 65, 69;
-	--gruv-dark-bg3: 65, 75, 80;
-	--gruv-dark-bg4: 73, 81, 86;
+  /* Background shades (dark greens) */
+  --gruv-dark-bg-hard: 34, 40, 44;         /* #22282c */
+  --gruv-dark-bg: 39, 47, 52;              /* #272f34 */
+  --gruv-dark-bg-alt: 47, 56, 62;         /* #2f383e */
+  --gruv-dark-bg-soft: 47, 56, 62;         /* #2f383e */
+  --gruv-dark-bg1: 55, 66, 71;             /* #374247 */
+  --gruv-dark-bg2: 64, 76, 81;             /* #404c51 */
+  --gruv-dark-bg3: 100, 115, 76;           /* #64734c */
+  --gruv-dark-bg4: 133, 153, 102;          /* #859966 */
 
-	--gruv-dark-fg-hard: 255, 251, 239;
-	--gruv-dark-fg: 211, 198, 170;
-	--gruv-dark-fg1: 157, 169, 160;
-	--gruv-dark-fg2: 133, 146, 137;
-	--gruv-dark-fg3: 122, 132, 120;
+  /* Foreground / text shades (Everforest light green family) */
+  --gruv-dark-fg-hard: 220, 198, 170;      /* #D3C6AA (fg color from Everforest) */
+  --gruv-dark-fg: 220, 198, 170;           /* #D3C6AA (fg color) */
+  --gruv-dark-fg1: 167, 192, 128;          /* #A7C080 (muted olive green) */
+  --gruv-dark-fg2: 133, 153, 102;          /* #859966 (medium light green) */
+  --gruv-dark-fg3: 100, 115, 76;           /* #64734c (darker soft green) */
 
-	--gruv-dark-purple-dark: 70, 63, 72;
-	--gruv-dark-purple-light: 214, 153, 182;
+  /* Accent colors */
+  --gruv-dark-purple-dark: 146, 115, 140;  /* soft purple */
+  --gruv-dark-purple-light: 211, 134, 155; /* muted pinkish purple */
 
-	--gruv-dark-yellow-dark: 69, 68, 60;
-	--gruv-dark-yellow-light: 219, 188, 127;
-	
-	--gruv-dark-red-dark: 73, 59, 64;
-	--gruv-dark-red-light: 230, 126, 128;
+  --gruv-dark-yellow-dark: 200, 180, 80;   /* warm, earthy yellow */
+  --gruv-dark-yellow-light: 250, 189, 47;  /* lighter yellow for accents */
+  
+  --gruv-dark-red-dark: 160, 80, 80;       /* soft muted red */
+  --gruv-dark-red-light: 251, 73, 52;      /* bright red */
 
-	--gruv-dark-orange-dark: 77, 63, 59;
-	--gruv-dark-orange-light: 230, 153, 117;
+  --gruv-dark-orange-dark: 180, 100, 70;   /* earthy orange */
+  --gruv-dark-orange-light: 254, 128, 25;  /* brighter orange */
 
-	--gruv-dark-blue-dark: 56, 75, 85;
-	--gruv-dark-blue-light: 127, 187, 179;
+  --gruv-dark-blue-dark: 80, 115, 130;     /* soft teal-blue */
+  --gruv-dark-blue-light: 131, 165, 152;   /* faded blue-green */
 
-	--gruv-dark-green-dark: 60, 72, 65;
-	--gruv-dark-green-light: 167, 192, 128;
+  --gruv-dark-green-dark: 130, 140, 70;    /* forest green */
+  --gruv-dark-green-light: 184, 187, 38;   /* olive green */
 
-	--gruv-dark-aqua-dark: 59, 74, 68;
-	--gruv-dark-aqua-light: 131, 192, 146;
+  --gruv-dark-aqua-dark: 100, 140, 110;    /* muted aqua */
+  --gruv-dark-aqua-light: 142, 192, 124;   /* light greenish aqua */
 
-	--gruv-dark-gray-dark: 79, 91, 88;
-	--gruv-dark-gray-light: 122, 132, 120;
+  --gruv-dark-gray-dark: 122, 132, 125;    /* #7A8478 (grey0) */
+  --gruv-dark-gray-light: 133, 146, 150;   /* #859289 (grey1) */
 }
