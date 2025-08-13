@@ -1,0 +1,67 @@
+@import url(https://iosevka-webfonts.github.io/iosevka/Iosevka.css);
+
+body {
+    --font: 'Iosevka Web';
+    font-weight: 400;
+    font-size: 13;
+    --code-font: 'Iosevka Web';
+}
+
+/* reduce context menu padding */
+.scroller_c1e9c4{
+    margin: -4px;
+    &::after,.separator_c1e9c4 {
+        margin: 1px 8px !important;
+    }
+    &::after,.wrapper_f563df {
+        padding: 2px !important;
+    }
+    &::after,.item_c1e9c4{
+        /* min-height is 32px as default, change value for desired look */
+        min-height: 32;
+        /* padding is 4px 8px as default, change value for desired look */
+        padding: 4px 8px;
+    }
+}
+
+/* override gruvbox with everforest */
+* {
+	--gruv-dark-bg-hard: 30, 35, 38;
+	--gruv-dark-bg: 39, 46, 51;
+	--gruv-dark-bg-alt: 35, 42, 46;
+	--gruv-dark-bg-soft: 41, 49, 54;
+	--gruv-dark-bg1: 46, 56, 60;
+	--gruv-dark-bg2: 55, 65, 69;
+	--gruv-dark-bg3: 65, 75, 80;
+	--gruv-dark-bg4: 73, 81, 86;
+
+	--gruv-dark-fg-hard: 255, 251, 239;
+	--gruv-dark-fg: 211, 198, 170;
+	--gruv-dark-fg1: 157, 169, 160;
+	--gruv-dark-fg2: 133, 146, 137;
+	--gruv-dark-fg3: 122, 132, 120;
+
+	--gruv-dark-purple-dark: 70, 63, 72;
+	--gruv-dark-purple-light: 214, 153, 182;
+
+	--gruv-dark-yellow-dark: 69, 68, 60;
+	--gruv-dark-yellow-light: 219, 188, 127;
+	
+	--gruv-dark-red-dark: 73, 59, 64;
+	--gruv-dark-red-light: 230, 126, 128;
+
+	--gruv-dark-orange-dark: 77, 63, 59;
+	--gruv-dark-orange-light: 230, 153, 117;
+
+	--gruv-dark-blue-dark: 56, 75, 85;
+	--gruv-dark-blue-light: 127, 187, 179;
+
+	--gruv-dark-green-dark: 60, 72, 65;
+	--gruv-dark-green-light: 167, 192, 128;
+
+	--gruv-dark-aqua-dark: 59, 74, 68;
+	--gruv-dark-aqua-light: 131, 192, 146;
+
+	--gruv-dark-gray-dark: 79, 91, 88;
+	--gruv-dark-gray-light: 122, 132, 120;
+}
